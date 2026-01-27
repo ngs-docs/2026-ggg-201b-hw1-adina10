@@ -1,4 +1,8 @@
-SAMPLES = ["SRR2584857_1"]
+SAMPLES = [
+  "SRR2584403_1",
+  "SRR2584404_1",
+  "SRR2584405_1",
+  "SRR2584857_1"]
 GENOME = ["ecoli-rel606"]
 
 rule make_vcf:
@@ -79,7 +83,7 @@ rule predict_effects:
         fasta="{genome}.fa.gz",
         gff="{genome}.sorted.gff.gz",
         vcf="outputs/{reads}.x.{genome}.vcf",
-        tabix_idx='ecoli-rel606.sorted.gff.gz.tbi',
+        tabix_idx='{genome}.sorted.gff.gz.tbi',
     output:
         txt="outputs/{reads}.x.{genome}.vep.txt",
         html="outputs/{reads}.x.{genome}.vep.txt_summary.html",
