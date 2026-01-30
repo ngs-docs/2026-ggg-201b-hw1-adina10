@@ -1,0 +1,14 @@
+Which variants are present in which samples?
+SRR2584403_1.x.ecoli-rel606.vep.txt shows 2 intergenic SNVs.
+SRR2584404_1.x.ecoli-rel606.vep.txt shows 1 deletion and 3 SNVs.
+SRR2584405_1.x.ecoli-rel606.vep.txt shows 1 insertion and 41 SNVs.
+SRR2584857_1.x.ecoli-rel606.vep.txt shows 1 insertion and 4 SNVs.
+
+Which variants are shared between two or more samples?
+The first and second samples share both ecoli	1329520	.	T	G and ecoli	4141016	.	C	A	
+
+Are there any variants that stand out in terms of the likely biological impact?
+There was one upstream variant in the third sample (ecoli_238917_G/T)
+And 2 upstream variants (ecoli_1996109_A/T, ecoli_2000253_A/T) and 3 downstream variants (ecoli_3351282_C/T, ecoli_4192865_G/A, ecoli_4593578_C/T) in the third sample.
+These would generally be more impactful than intergenetic variants because they are located closer to UTRs or promoters and could more directly affect gene regulation and transcription/translation.
+But overall, there are no big consequential variants (coding variants).
